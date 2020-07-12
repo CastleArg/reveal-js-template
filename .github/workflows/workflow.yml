@@ -1,2 +1,11 @@
-- name: Deploy to GitHub Pages
-  uses: JamesIves/github-pages-deploy-action@3.5.7
+name: Greet Everyone
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+        - name: Deploy to GitHub Pages
+            uses: JamesIves/github-pages-deploy-action@3.5.7
