@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp -r -f ./node_modules/reveal.js/dist ./public && cp -r -f ./node_modules/reveal.js/plugin ./public && cp -r -f ./index.html ./public",
+    "build": " cp -r ./node_modules/reveal.js ./public && cp -f ./index.html ./public",
     "start": "npm run build && serve"
   },
   "keywords": [],
